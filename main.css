@@ -27,12 +27,26 @@ button {
   padding: 1rem;
   letter-spacing: 1px;
   margin-inline: 4px;
+  margin-block: 1rem;
   filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.15));
   transition: all 175ms ease;
+  text-transform: uppercase;
 }
 
 button:hover {
   background: #54a0ff no-repeat;
   filter: drop-shadow(0 5px 25px rgba(0, 0, 0, 0.15));
   transform: scale(1.05);
+}
+
+button:active {
+  background: #2e82d6 no-repeat;
+  filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.15));
+  transform: scale(0.95);
+}
+
+/* styling */
+
+.div-aula {
+  margin-top: 5rem;
 }
