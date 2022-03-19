@@ -15,8 +15,8 @@ function functionName() {
       alert(`O seu nome e ${nome}`);
       break;
     default:
-      console.log(`O seu nao e nem um nem outro, decida-se!`);
-      alert(`O seu nao e nem um nem outro, decida-se!`);
+      console.log(`Nome: ${nome}, usuario nao encontrado!`);
+      alert(`Nome: ${nome}, usuario nao encontrado!`);
       break;
   }
 }
