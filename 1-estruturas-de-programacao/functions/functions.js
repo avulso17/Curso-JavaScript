@@ -29,5 +29,8 @@ let abs = Math.abs(200 - 1000);
 console.log(`O resultado da conta sem o abs e : ${200 - 1000}`);
 console.log(`O resultado do abs e: ${abs}`);
 
+let pie = Math.pow(2, 7);
+console.log(`O resultado do pow e: ${pie}`);
+
 // built-in console.log();
-console.log("O console.log tambem e um built-in!");
+console.log('O console.log("Hello world!") tambem e um built-in!');

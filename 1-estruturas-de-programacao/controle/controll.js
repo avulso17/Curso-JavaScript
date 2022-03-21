@@ -38,3 +38,42 @@ function ifControll() {
     button.textContent = document.write("Teste 1");
   }
 }
+
+// ex 10
+const speed = 82.5;
+
+console.log(`Sistema de transito:\nVelocidade registrada -> ${speed} km/h`);
+
+if (speed > 80) {
+  console.log("Voce foi multado!");
+} else {
+  console.log("Continue assim, salve vidas!");
+}
+
+// ex 11
+function driveIn() {
+  const age = prompt("Digite sua idade:");
+
+  if (age >= 18) {
+    const cnh = prompt("Voce possui CNH? Sim(1) Nao(2)");
+
+    if (cnh === "1") {
+      console.log(
+        `-Sistema DETRAF-\nIdade: ${age}\nPossui CNH? Sim.\nDirija com cuidado!`
+      );
+    } else if (cnh === "2") {
+      console.log(
+        `-Sistema DETRAF-\nIdade: ${age}\nPossui CNH? Nao.\nProcure a auto-escola mais proxima!`
+      );
+    } else {
+      console.log("Digite 1 para sim, e 2 para nao!");
+    }
+  } else if (age == null || age == "") {
+    console.log("Campo idade nao pode ser vazio");
+  } else {
+    console.log(
+      `-Sistema DETRAF-\nIdade: ${age}\nVoce nao tem idade para ter CNH. Aguarde!`
+    );
+    console.log(age);
+  }
+}
