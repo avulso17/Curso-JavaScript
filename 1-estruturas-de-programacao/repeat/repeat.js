@@ -49,3 +49,39 @@ for (let a = 10; a >= 0; a--) {
 
   console.log(`O valor de a e: ${a}`);
 }
+
+// ex 14
+function ex14() {
+  for (let ex = 0; ex <= 50; ex++) {
+    if (ex % 2 == 0) {
+      console.log(`Numero par - ${ex}`);
+      // continue;
+    } else {
+      console.log(`Numero impar - ${ex}`);
+    }
+  }
+}
+
+// ex15
+function ex15() {
+  let num = prompt("Digite qualquer numero:");
+  let div = 0;
+
+  for (let p = 1; p <= num; p++) {
+    if (num % p == 0) {
+      div++;
+    }
+  }
+
+  if (div == 2) {
+    console.log(
+      `O numero ${num} e primo!\nNumero de divisoes possiveis: ${div}`
+    );
+    alert(`O numero ${num} e primo!`);
+  } else {
+    console.log(
+      `O numero ${num} nao e primo!\nNumero de divisoes possiveis: ${div}`
+    );
+    alert(`O numero ${num} nao e primo!`);
+  }
+}
